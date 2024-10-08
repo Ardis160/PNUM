@@ -6,7 +6,13 @@ a = np.array([[2, 2, 0],
 
 b = np.array([5, 3, 7], float)
 
-n = len(b)
+x = np.linalg.solve(a, b)
+print("Koeficienty jsou:")
+print(x)
+
+
+
+"""n = len(b)
 for k in range(n):
     for i in range(k + 1, n):
         fctr = a[i, k] / a[k, k]
@@ -20,4 +26,5 @@ for i in range(n - 1, -1, -1):
     x[i] = (b[i] - np.dot(a[i, i + 1:], x[i + 1:])) / a[i, i]
 
 print("Koeficienty jsou")
-print(x)
+print(x)"""
+
